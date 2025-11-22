@@ -31,11 +31,12 @@ class ytd:
         ydl_opts = {
             'noplaylist': True,
             'format': 'bestvideo/best',
-            'outtmpl': '%(title)s - DOWNLOADED.%(ext)s',
+            'outtmpl': r'C:\Users\prane\Projects\yt-dlp api\Downloads\%(title)s - DOWNLOADED.%(ext)s',
             'postprocessors': [{
             'key': 'FFmpegVideoConvertor',
             'preferedformat': 'mp4',
-        }],
+            'merge_output_format': 'mp4'
+            }],
         }
         try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -48,7 +49,7 @@ class ytd:
         ydl_opts = {
             'noplaylist': True,
             'format': 'bestaudio/best',
-            'outtmpl': '%(title)s - DOWNLOADED.%(ext)s',
+            'outtmpl': r'C:\Users\prane\Projects\yt-dlp api\Downloads/%(title)s - DOWNLOADED.%(ext)s',
             'postprocessors': [{
                 'key': 'FFmpegExtractAudio',
                 'preferredcodec': 'mp3',
