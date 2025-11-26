@@ -3,7 +3,7 @@
 
 A simple Python tool to download videos and audio from YouTube.  
 Built with **yt-dlp** and **Rich** libraries for progress display and better terminal UI.
-
+Download here👉**[YTui](https://github.com/Praneeth-Gandodi/Y2Api/releases/tag/YTui-v0.1)**
 ---
 
 ## Note
